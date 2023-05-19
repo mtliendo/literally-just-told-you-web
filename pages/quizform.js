@@ -35,7 +35,7 @@ const QuizForm = () => {
 		// handle the form submission here
 		console.log({
 			id,
-			question,
+			text: question,
 			answers,
 		})
 		gen
@@ -43,7 +43,7 @@ const QuizForm = () => {
 				'chainreact',
 				JSON.stringify({
 					id,
-					question,
+					text: question,
 					answers,
 				})
 			)

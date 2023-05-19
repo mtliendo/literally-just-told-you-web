@@ -21,7 +21,7 @@ export const MultipleChoiceQuizArea = ({
 
 	return (
 		<div className="flex flex-col justify-center items-center mt-24">
-			<h1 className="text-6xl py-4">{currentQuestion.text}</h1>
+			<h1 className="text-6xl py-4 text-center">{currentQuestion.text}</h1>
 
 			<section className="flex flex-col max-w-md w-full mt-12">
 				{currentQuestion.answers.map((answer, index) => {

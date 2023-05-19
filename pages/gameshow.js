@@ -45,6 +45,7 @@ export default function Home() {
 	useEffect(() => {
 		const sub = gen.subscribe('chainreact', ({ data }) => {
 			console.log(JSON.parse(data))
+			gameData.rounds[5].questions.push(JSON.parse(data))
 		})
 
 		return () => {
