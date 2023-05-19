@@ -13,6 +13,13 @@ export const MultipleChoiceQuizArea = ({
 		}
 	}
 
+	// 1. Basketball
+	// 2. Cecelia Martinez
+	//3. Manchester city
+	// 4. Math
+	// 5. Underhill
+	// 6. MagnoliaJS
+
 	return (
 		<div className="flex flex-col justify-center items-center mt-24">
 			<h1 className="text-6xl py-4 text-center">{currentQuestion.text}</h1>
