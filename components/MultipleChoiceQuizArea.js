@@ -5,12 +5,6 @@ export const MultipleChoiceQuizArea = ({
 	currentQuestion,
 	updateIsCorrect,
 }) => {
-	const indexColor = {
-		0: 'primary',
-		1: 'secondary',
-		2: 'accent',
-	}
-
 	const checkIfCorrect = (selectedAnswer) => {
 		if (selectedAnswer.isCorrect) {
 			updateIsCorrect(true)
@@ -25,11 +19,17 @@ export const MultipleChoiceQuizArea = ({
 
 			<section className="flex flex-col max-w-md w-full mt-12">
 				{currentQuestion.answers.map((answer, index) => {
+					const indexColor = {
+						0: 'primary',
+						1: 'secondary',
+						2: 'accent',
+					}
+					const buttonColor = `btn-secondary`
 					return (
 						<>
 							<label
 								htmlFor={`my-modal-${index}`}
-								className={`btn btn-${indexColor[index]} my-2`}
+								className={`btn ${buttonColor} my-2`}
 								onClick={() => {
 									checkIfCorrect(answer)
 								}}
